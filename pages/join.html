@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--stylesheet links-->
+
+    <link rel="stylesheet" href="../style.css">
+
+    <!--font links-->
+
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+            <ul>
+                <li class="nav_link"><a href="../index.html">Home</a></li>
+                <li class="nav_link"><a href="#">Contact</a></li>
+                <li class="nav_link"><a href="join.html">Join</a></li>
+                <li class="nav_link"><a href="#">Login</a></li>
+            </ul>
+
+        </nav>
+
+    <div class="main-content">
+
+        <header>
+            <h1>Virtual Writing Nook</h1>
+        </header>
+
+        <div class="container">
+            <div class="form-div">
+                <form action="index.html" method="post">
+            
+                    <h2>Sign Up</h2>
+                    
+                    <fieldset>
+                    
+                        <legend><h3>your basic info</h3></legend>
+                        
+                        <label for="name">Username:</label>
+                        <input type="text" id="name" name="user_name">
+                
+                        <label for="date">Date of Birth:</label>
+                        <input type="date" id="date" name="user_date">
+                        
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email">
+                        
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="user_password">
+                        
+                    </fieldset>
+                    
+                    <fieldset>
+                    
+                        <legend><h3>about you</h3></legend>
+                        
+                        <label for="bio">Biography:</label>
+                        <textarea class="text-box" id="bio" name="user_bio"></textarea>
+                        
+                        <label for="notebook">Notebook Uses:</label>
+                        <select id="notebook" name="user_notebook">
+                            <optgroup label="Business">
+                            <option value="business_notes">organization</option>
+                            <option value="business_projects">project platform</option>
+                            <option value="business_remembral">remembral</option>
+                            </optgroup>
+                            <optgroup label="Personal">
+                            <option value="personal_student">notetaking/coursework</option>
+                            <option value="personal_journal">private journaling</option>
+                            <option value="personal_to-do">to-do list/shopping</option>
+                            </optgroup>
+                            <optgroup label="Social">
+                            <option value="social_social-networking">networking</option>
+                            <option value="social_remembral">remembral</option>
+                            <option value="social_share">sharing information</option>
+                            </optgroup>
+                        </select>
+                        
+                        <label for="interests">Receive:</label>
+                        <div class="container-1">
+                            <input type="checkbox" id="art" value="interest_art">art <br>
+                            <input type="checkbox" id="astronomy" value="interest_astronomy">astronomy <br>
+                            <input type="checkbox" id="forests" value="interest_forests">forests <br>
+                            <input type="checkbox" id="literature" value="interest_literature">literature <br>
+                        </div>  
+                
+                        <div class="container-2">  
+                            <input type="checkbox" id="music" value="interest_music">music <br>
+                            <input type="checkbox" id="photography" value="interest_photography">photography <br>
+                            <input type="checkbox" id="space_travel" value="interest_space-travel">space travel <br>
+                            <input type="checkbox" id="taxidermy" value="interest_taxidermy">taxidermy <br>
+                        </div>  
+        
+                    </fieldset>
+                    
+                    <div class="button-container">
+                        <button type="submit"><h2 class="button-h">submit</h2></button>
+                    </div>
+
+                </form>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+        <footer>
+            &copy All rights received to [site liberties]
+        </footer>
+
+    </div>
+
+</body>
+</html>
