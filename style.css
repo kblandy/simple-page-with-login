@@ -264,6 +264,20 @@ ul {
 
 /*
 
+|| CSS Selectors ||
+
+*/
+
+/* changes mouse cursor when in indicated fields */
+input[class="input-field"],
+textarea[class="text-box"],
+button[type="submit"] {
+    cursor: pointer;
+}
+
+
+/*
+
 || Media Queries ||
 
 */
@@ -310,6 +324,7 @@ ul {
         height: 40%;
     }
 
+/* adds line styling with <h1> */
     h1:before,
     h1:after {
 
@@ -324,6 +339,7 @@ ul {
     h1:after {
         margin: 0 -55% 0 .5em;
     }
+/*end line styling to <h1> */
 
     h2 {
         font-size: 25px;

@@ -2,20 +2,40 @@
 //when user logs in, information should match what is in console
 //if not, decline entry
 
-const joinForm = document.getElementById('join-form');
-const user = {};//create an empty object
-const userInfo = document.getElementById(user.['']);
 
-info.username = document.getElementById('user_name').value;
-info.doB = document.getElementById('user_date').value;
-info.email = document.getElementById('user_email').value;
-info.password = document.getElementById('user_password').value;
+const submit = document.getElementById("submitButton");
 
+const username = document.getElementById("userName");
+const doB = document.getElementById("userBirthDate");
+const email = document.getElementById("userEmail");
+const password = document.getElementById("userPassword");
 
+const userData = []; /*object where user data is collected */
 
+// const userInfo = [userName, userBirthDate, userEmail, userPassword];
 
+/*adds user input fields to userData list*/
 
-joinForm.submit.addEventListener('click', (event) =>{
+function insert () {
+        userData.push(username.value);
+        userData.push(doB.value);
+        userData.push(email.value);
+        userData.push(password.value);
+}
+
+/*prevents submit button from actually submitting*/
+
+submit.addEventListener('click', (event) =>{
         event.preventDefault();
-        console.log(info);
+        insert();
+        console.log(userData);  
         });
+      
+
+
+
+
+
+
+
+
