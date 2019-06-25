@@ -1,3 +1,9 @@
+/*
+
+|| BASE RULES ||
+
+*/
+
 * {
     box-sizing: border-box;
 }    
@@ -51,41 +57,7 @@ button {
     border: none;
   }
 
-.button-container {
-    width: 50%;
-    height: 100px;
-    text-align: center;
-    margin: auto;
-}
-
-.button-h {
-    margin: 10px;
-    padding: 5px;
-    background: grey;
-    text-shadow: 1px 1px 1px black;
-}
-
-.container {
-    margin: auto;
-    
-}
-
-.container-contact {
-    margin: auto;
-    height: 80vh;
-}
-
-.div-content {
-    margin: auto;
-}
-
-.div-content-contact {
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-fieldset {
+  fieldset {
     display: flex;
     align-content: center;
     margin: auto;
@@ -100,21 +72,6 @@ footer {
     padding: 4px;
     position: relative;
 }
-
-.form-div {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 20px;
-}
-
-.front-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    opacity: .5;
-    }
 
 h1,
 h2,
@@ -174,24 +131,6 @@ html {
     
 }
 
-.img_container {
-    justify-content: center;
-    background: white;
-    width: 100%;
-    height: auto;
-}
-
-.input-field {
-    height: 35px;
-}
-
-.input-field,
-.text-box {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
-
 label {
     font-weight: bold;
     text-align: center;
@@ -201,21 +140,6 @@ label {
 
 legend {
     text-align: center;
-}
-
-li,
-.li-contact {
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.li-contact {
-    color: black;
-    text-align: center;
-}
-
-.main-content {
-    width: 100%;;
 }
 
 nav {
@@ -234,15 +158,6 @@ p {
     padding: 20px;
 }
 
-.p_content {
-    margin: 0;
-    text-align: justify;
-}
-
-.text-box {
-    height: 200px;
-}
-
 ul {
     display: flex;
     justify-content: space-around;
@@ -251,6 +166,112 @@ ul {
     list-style-type: none; /* gets rid of bullets */
     margin: 0;
     padding: 5px;
+}
+
+/*
+
+|| LAYOUT ||
+
+*/
+
+.button-container {
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.button-h {
+    margin: 10px;
+    padding: 5px;
+    background: grey;
+    text-shadow: 1px 1px 1px black;
+}
+
+.container {
+    margin: auto;
+    
+}
+
+.container-contact {
+    margin: auto;
+    height: 80vh;
+}
+
+.div-content {
+    margin: auto;
+}
+
+.div-content-contact {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.form-div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.front-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: .5;
+    }
+
+
+
+
+
+.img_container {
+    justify-content: center;
+    background: white;
+    width: 100%;
+    height: auto;
+}
+
+.input-field {
+    height: 35px;
+}
+
+.input-field,
+.text-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+
+
+li,
+.li-contact {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.li-contact {
+    color: black;
+    text-align: center;
+}
+
+.main-content {
+    width: 100%;;
+}
+
+
+.p_content {
+    margin: 0;
+    text-align: justify;
+}
+
+.text-box {
+    height: 200px;
 }
 
 .ul-contact {
