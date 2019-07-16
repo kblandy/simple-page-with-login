@@ -5,24 +5,19 @@
 */
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
 }    
 
 a {
     font-size: 18px;
     font-weight: lighter;
     text-decoration: none;
-    text-shadow: 3px 1px 1px black;
-
 }
 
 a:hover {
     color: rgb(115, 145, 115);
-}
-
-a,
-li {
-    color: white;
 }
 
 a,
@@ -32,12 +27,10 @@ p {
 }
 
 body {
+    background-image: url("./images/dynamic-style.png"); /* one dot means in same folder */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
-    background-image: url("./images/dynamic-style.png"); /* one dot means in same folder */
-
     overflow-x: hidden;
 }
 
@@ -47,66 +40,68 @@ html {
 }
 
 button {
-    color: white;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
-    font-size: 20px;
-    width: 100%;
-
     background-color: transparent;
     border: none;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
   }
 
-  fieldset {
-    display: flex;
+fieldset {
     align-content: center;
+    display: flex;
     margin: auto;
-    padding-bottom: 25px;
+    padding-bottom: auto;
 }
 
 footer {
+    background: rgb(78, 78, 78);
     color: white;
     letter-spacing: 1px;
-    text-align: center;
-    background: rgb(78, 78, 78);
     padding: 4px;
-    position: relative;
+    /* position: relative; */
+    text-align: center;
 }
 
 h1,
 h2,
 h3,
-label {
+h5,
+label,
+.a-sign-up {
     font-family: 'Cinzel', serif;
     text-align: center;
 }
 
 h1 {
+    background: grey;
     color: white;
     font-size: 40px;
     font-weight: lighter;
     letter-spacing: 3px;
     text-shadow: 1px 1px 1px black;
-    background: grey;
 }
 
-h2
+h2,
+.a-sign-up
  {
     font-size: 20px;
-    text-shadow: 1px 1px 1px grey;
     padding: 20px;
+    text-shadow: 1px 1px 1px grey;
 }
 
 /*creates lines before and after h2*/
 
 h2:before, 
 h2:after {
-  content: "";
-  display: inline-block;
-  width: 20%;
-  margin: 0 .5em 0 -55%;
-  vertical-align: middle;
-  border-bottom: 1px solid;
+    border-bottom: 1px solid;
+    content: "";
+    display: inline-block;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    width: 20%;
 }
 
 h2:after {
@@ -121,48 +116,50 @@ h3 {
 
 
 header {
-    width: 100%;
     height: 10%;
+    width: 100%;
 }
 
 html {
-    width: 100vw;
     height: 100vh;
-    
+    width: 100vw;
 }
 
 label {
     font-weight: bold;
-    text-align: center;
     padding: 20px;
-
+    text-align: center;
 }
 
 legend {
     text-align: center;
 }
 
+li {
+    color: white;
+}
+
 nav {
+    margin: 0;
     position: fixed;
     width: 100%;
-    margin: 0;
+    z-index: 100;
 }
 
 p {
     font-size: 20px;
     font-weight: lighter;
-    text-align: justify;
     letter-spacing: 1px;
     line-height: 2em;
     margin: 0;
     padding: 20px;
+    text-align: justify;
 }
 
 ul {
+    background: rgb(78, 78, 78);
     display: flex;
     justify-content: space-around;
-
-    background: rgb(78, 78, 78);
     list-style-type: none; /* gets rid of bullets */
     margin: 0;
     padding: 5px;
@@ -174,28 +171,60 @@ ul {
 
 */
 
-.button-container {
-    width: 50%;
-    height: 100px;
+.alt-p {
+    margin: 5px;
+}
+
+.a-sign-up {
+    background-color: #808080;
+    color: white;
+    font-size: 15px;
+    padding: 4px;
     text-align: center;
+    text-transform: uppercase
+}
+
+.border {
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.button-alt-sign-in {
+    background-color: beige;
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.button-container {
+    height: 50%;
     margin: auto;
+    text-align: center;
+    width: 50%;
 }
 
 .button-h {
-    margin: 10px;
-    padding: 5px;
     background: grey;
+    margin: 5px;
+    /* padding: 5px; */
     text-shadow: 1px 1px 1px black;
+}
+
+.button-join {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .container {
     margin: auto;
-    
 }
 
 .container-contact {
-    margin: auto;
     height: 80vh;
+    margin: auto;
 }
 
 .div-content {
@@ -203,37 +232,36 @@ ul {
 }
 
 .div-content-contact {
-    margin-top: 50px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
 
-
+.error {
+    background-color: rgb(218, 110, 91);
+    border: 2px solid maroon;
+}
 
 .form-div {
-    width: 90%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     margin: 0 20px;
+    width: 90%;
 }
 
 .front-img {
     display: block;
-    width: 100%;
     height: auto;
     opacity: .5;
-    }
-
-
-
-
+    width: 100%;
+}
 
 .img_container {
-    justify-content: center;
     background: white;
-    width: 100%;
+    justify-content: center;
     height: auto;
+    width: 100%;
 }
 
 .input-field {
@@ -264,24 +292,24 @@ li,
     width: 100%;;
 }
 
+.nav_link {
+    color: white;
+    text-shadow: 3px 1px 1px black;
+}
 
 .p_content {
     margin: 0;
     text-align: justify;
 }
 
+.p-forum {
+    border: 1px dotted black;
+}
+
 .text-box {
     height: 200px;
 }
 
-.ul-contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    color: black;
-    background: none;
-}
 
 /*
 
@@ -292,7 +320,8 @@ li,
 /* changes mouse cursor when in indicated fields */
 input[class="input-field"],
 textarea[class="text-box"],
-button[type="submit"] {
+button[type="submit"],
+a[class="a-sign-up"] {
     cursor: pointer;
 }
 
@@ -325,14 +354,15 @@ button[type="submit"] {
 
 
     .div-content {
-        width: 60%;
         margin-top: 0;
+        width: 60%;
     }
 
     footer {
-        text-align: center;
-        margin: 0;
+        margin-bottom: 0;
         padding: 10px;
+        text-align: center;
+        z-index: 100;
     }
 
     .form-div {
@@ -340,40 +370,43 @@ button[type="submit"] {
     }
 
     h1 {
-        margin: 0;
+        margin: auto;
         padding: 50px;
-        height: 40%;
+        /* height: 40%; */
     }
 
-/* adds line styling with <h1> */
+/* line styling with <h1>, i.e. ----TEXT---- */
     h1:before,
     h1:after {
-
+        border-bottom: 1px solid;
         content: "";
         display: inline-block;
-        width: 20%;
         margin: 0 .5em 0 -55%;
         vertical-align: middle;
-        border-bottom: 1px solid;
+        width: 20%;
     }
 
     h1:after {
         margin: 0 -55% 0 .5em;
     }
-/*end line styling to <h1> */
+/* /line styling to <h1> */
 
     h2 {
         font-size: 25px;
-        margin-top: 20px;
         margin-bottom: 20px;
-        padding-top: 20px;
+        margin-top: 20px;
         padding-bottom: 10px;
+        padding-top: 20px;
     }
 
     .img_container {
         flex-grow: 2;
-        width: 35%;
         padding: 0;
+        width: 20%;
+    }
+
+    .input-field {
+        width: 60%;
     }
 
     legend {
@@ -390,8 +423,8 @@ button[type="submit"] {
 
     .p_content {
         font-size: 25px;
-        margin-top: 20px;
         margin-bottom: 40px;
+        margin-top: 20px;
         padding: 0 30px;
     }
 }

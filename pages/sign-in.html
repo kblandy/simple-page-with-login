@@ -19,56 +19,57 @@
 </head>
 
 <body>
-
     <nav>
-            <ul>
-                <li class="nav_link"><a href="../index.html">home</a></li>
-                <li class="nav_link"><a href="contact.html">contact</a></li>
-                <li class="nav_link"><a href="join.html">join</a></li>
-                <li class="nav_link"><a href="sign-in.html">login</a></li>
-            </ul>
+        <ul>
+            <li class="nav_link"><a href="../index.html" class="nav_link">home</a></li>
+            <li class="nav_link"><a href="#" class="nav_link">contact</a></li>
+            <li class="nav_link"><a href="join.html" class="nav_link">join</a></li>
+            <li class="nav_link"><a href="sign-in.html" class="nav_link">login</a></li>
+        </ul>
 
-        </nav>
+    </nav>
 
     <div class="main-content">
-
         <header>
-            <h1>Virtual Writing Nook</h1>
+            <h1>Site Title Here</h1>
         </header>
 
         <div class="container">
             <div class="form-div">
-                <form action="index.html" method="post">
-            
-                    <h2>Sign Up</h2>
-                    
-                    <fieldset>
-                    
-                        <legend><h3>Basic Info</h3></legend>
-                        
+                <!-- Form -->
+                <form action="#" method="post" id="form-log-in">
+
+                    <h2>Log In</h2>
+                    <fieldset>   
                         <label for="name">Username:</label>
-                        <input type="text" id="name" name="user_name" class="input-field">
+                        <input type="text" id="name-login" name="user_name" class="input-field">
                         
                         <label for="password">Password:</label>
-                        <input type="password" id="password" name="user_password" class="input-field">
-                        
+                        <input type="password" id="password-login" name="user_password" class="input-field">   
                     </fieldset>
 
                     <div class="button-container">
-                        <button type="submit" id="submit"><h2 class="button-h">submit</h2></button>
+                        <button type="submit" id="submit-login" class="button-h"><h2>Log In</h2></button>
+                        <div class="button-join">
+                            <h5 class="alt-p">Not a member?</h5>
+                            <a href="join.html" class="a-sign-up">Sign Up</a>
+                        </div>
                     </div>
 
-                </form>    
+                </form>  <!-- /Form -->
             </div>
         </div>
+    </div>  <!-- /main content -->
+<!-- Footer -->
+    <footer>
+        &copy All rights reserved to [site liberties]
+    </footer> <!-- /Footer -->
 
-        <footer>
-            &copy All rights received to [site liberties]
-        </footer>
-
-    </div>
-
+<!-- Javascript -->
     <script src= "../scripts/script-login.js"></script>
+
+<!-- jQuery -->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
 
 </body>
 </html>

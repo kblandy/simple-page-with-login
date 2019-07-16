@@ -1,12 +1,32 @@
-//need to GET elements and assign to variables
+const submitLogin = document.getElementById("submit-login");
 
-//function for information retrieval
+const usernameLogin = document.getElementById("name-login");
+const passwordLogin = document.getElementById("password-login");
+//ensures that each field is filled out and alerts when not//
 
-// if username and userpassword === logged username and userpassword:
+//makes box red by adding .error 
+function addError(inputField) {
+    inputField.classList.add("error");
+  }
 
-    //then proceed to forum.html (which doesn't exist yet)
+function validateFormLogin() {
+        if (!usernameLogin.value) {
+          addError(usernameLogin);
+        //   addError(); that highlights indicated field
+        } else if (!passwordLogin.value) {
+          addError(passwordLogin);
+          //   addError(); that highlights indicated field
+        } else if (!usernameLogin.value && !passwordLogin.value) {
+            addError(usernameLogin);
+            addError(passwordLogin);
+        };
+}
 
-    //else:
-        //show error username/password combo does not match
-        //have an error message div/ modal?
+submitLogin.addEventListener('click', (event) =>{
+    event.preventDefault(); /*prevents submit button from actually submitting*/
+    validateFormLogin();
+});        
 
+
+//To add text will need to make a <thing> that appears
+//make a little div slide up and then slide back down?

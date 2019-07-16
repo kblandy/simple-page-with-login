@@ -11,9 +11,24 @@ const password = document.getElementById("userPassword");
 
 const userData = []; /*list where user data is collected */
 
-// const userInfo = [userName, userBirthDate, userEmail, userPassword];
 
-/*adds user input fields to userData object*/
+//ensures that each field is filled out and alerts when not//
+
+function validateForm() {
+        if (!username.value) {
+          alert("Enter username.");
+        //   function(); that highlights indicated field
+        } else if (!doB.value) {
+          alert("Enter date of birth.");
+          //   function(); that highlights indicated field
+        } else if (!email.value) {
+          alert("enter email");
+          //   function(); that highlights indicated field
+        } else if (!password.value) {
+          alert("Password does not include a number. Password must include at least 1 number.");
+          //   function(); that highlights indicated field
+        }
+}
 
 function insert () {
 
@@ -23,6 +38,7 @@ function insert () {
                 email: email.value,
                 password: password.value
         }
+        validateForm(); //calls function to ensure values are met
         userData.push(user);
 
         console.log(userData);
@@ -30,12 +46,15 @@ function insert () {
         localStorage.setItem('userStored', JSON.stringify(user));
 }
 
-/*prevents submit button from actually submitting*/
-
 submit.addEventListener('click', (event) =>{
-        event.preventDefault();
+        event.preventDefault(); /*prevents submit button from actually submitting*/
         insert();
-        });
+
+        
+});        
+
+
+
 
 
 
