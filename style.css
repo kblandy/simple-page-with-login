@@ -22,7 +22,8 @@ a:hover {
 
 a,
 footer,
-p {
+p,
+.error-message {
     font-family: 'Dosis', sans-serif;
 }
 
@@ -46,23 +47,25 @@ button {
     font-family: 'Cinzel', serif;
     font-size: 20px;
     font-weight: bold;
-    width: 100%;
-  }
+    width: 50%;
+}
 
 fieldset {
     align-content: center;
     display: flex;
-    margin: auto;
-    padding-bottom: auto;
+    margin: 10px;
+    padding: 0;
 }
+
+
 
 footer {
     background: rgb(78, 78, 78);
     color: white;
     letter-spacing: 1px;
     padding: 4px;
-    /* position: relative; */
     text-align: center;
+    margin-bottom: 0;
 }
 
 h1,
@@ -206,9 +209,11 @@ ul {
 
 .button-h {
     background: grey;
-    margin: 5px;
-    /* padding: 5px; */
+    margin: 10px;
     text-shadow: 1px 1px 1px black;
+    margin-right: 25%;
+    margin-left: 25%;
+
 }
 
 .button-join {
@@ -217,6 +222,7 @@ ul {
     justify-content: center;
     margin-bottom: 10px;
 }
+
 
 .container {
     margin: auto;
@@ -237,16 +243,23 @@ ul {
     margin-top: 50px;
 }
 
-.error {
-    background-color: rgb(218, 110, 91);
+.error,
+.error-message {
     border: 2px solid maroon;
+}
+
+.error-message {
+    color: maroon;
+    width: 100px;
+    text-align: center;
+    margin: auto;
 }
 
 .form-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 20px;
+    margin: auto;
     width: 90%;
 }
 
@@ -323,6 +336,15 @@ textarea[class="text-box"],
 button[type="submit"],
 a[class="a-sign-up"] {
     cursor: pointer;
+}
+
+#password-login,
+#userPassword {
+    margin-bottom: 20px;
+}
+
+#error-message {
+    
 }
 
 

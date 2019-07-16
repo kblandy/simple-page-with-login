@@ -21,10 +21,10 @@
 <body>
     <nav>
         <ul>
-            <li class="nav_link"><a href="../index.html" class="nav_link">home</a></li>
-            <li class="nav_link"><a href="#" class="nav_link">contact</a></li>
-            <li class="nav_link"><a href="join.html" class="nav_link">join</a></li>
-            <li class="nav_link"><a href="sign-in.html" class="nav_link">login</a></li>
+            <li><a href="../index.html" class="nav_link">home</a></li>
+            <li><a href="#" class="nav_link">contact</a></li>
+            <li><a href="join.html" class="nav_link">join</a></li>
+            <li><a href="sign-in.html" class="nav_link">login</a></li>
         </ul>
 
     </nav>
@@ -43,12 +43,22 @@
                     <fieldset>   
                         <label for="name">Username:</label>
                         <input type="text" id="name-login" name="user_name" class="input-field">
-                        
+
+                        <!-- error message div, hidden until activated -->
+                        <div class="error-message" id="error-message1">
+                            Fill out all fields!
+                        </div>
+
                         <label for="password">Password:</label>
-                        <input type="password" id="password-login" name="user_password" class="input-field">   
+                        <input type="password" id="password-login" name="user_password" class="input-field">
+
+                        <!-- error message div, hidden until activated -->
+                        <div class="error-message" id="error-message2">
+                            Fill out all fields!
+                        </div>   
                     </fieldset>
 
-                    <div class="button-container">
+                    <div>
                         <button type="submit" id="submit-login" class="button-h"><h2>Log In</h2></button>
                         <div class="button-join">
                             <h5 class="alt-p">Not a member?</h5>
@@ -60,6 +70,7 @@
             </div>
         </div>
     </div>  <!-- /main content -->
+
 <!-- Footer -->
     <footer>
         &copy All rights reserved to [site liberties]
@@ -67,9 +78,6 @@
 
 <!-- Javascript -->
     <script src= "../scripts/script-login.js"></script>
-
-<!-- jQuery -->
-    <script src="../scripts/jquery-3.4.1.min.js"></script>
 
 </body>
 </html>
