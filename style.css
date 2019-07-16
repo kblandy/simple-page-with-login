@@ -31,6 +31,7 @@ body {
     background-image: url("./images/dynamic-style.png"); /* one dot means in same folder */
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -66,6 +67,7 @@ footer {
     padding: 4px;
     text-align: center;
     margin-bottom: 0;
+    margin-top: auto;
 }
 
 h1,
