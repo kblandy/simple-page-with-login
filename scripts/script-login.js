@@ -43,6 +43,8 @@ function removeError(inputField) {
 }  
 
 //validates form and adds error and errorMessages
+//note, does not validate for type (i.e. making sure email has '@');
+//further validation will need to be added in future versions
 function validateFormLogin() {
         if (!usernameLogin.value) {
           addError(usernameLogin);

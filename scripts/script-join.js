@@ -70,6 +70,8 @@ function removeErrorJoin(inputField) {
 }  
 
 //validates form
+//note, does not validate for type (i.e. making sure email has '@');
+//further validation will need to be added in future versions
 function validateFormJoin() {
         if (!username.value) {
           addErrorJoin(username);

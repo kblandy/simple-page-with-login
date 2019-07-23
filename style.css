@@ -1,11 +1,6 @@
-/*
-
-|| BASE RULES ||
-
-*/
+/* || BASE RULES || */
 
 * {
-    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
 }    
@@ -28,7 +23,7 @@ p,
 }
 
 body {
-    background-image: url("./images/dynamic-style.png"); /* one dot means in same folder */
+    background-image: url("./images/dynamic-style.png"); 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -57,8 +52,6 @@ fieldset {
     margin: 10px;
     padding: 0;
 }
-
-
 
 footer {
     background: rgb(78, 78, 78);
@@ -98,6 +91,8 @@ h2,
 }
 
 /*creates lines before and after h2*/
+/*note, on small screens h2 lines may need to be disabled,
+depending on the length of the text*/
 
 h2:before, 
 h2:after {
@@ -113,12 +108,11 @@ h2:after {
   margin: 0 -55% 0 .5em;
 }
 
-/*end*/
+/*/creates lines before and after h2*/
 
 h3 {
     font-size: 20px;
 }
-
 
 header {
     height: 10%;
@@ -170,11 +164,7 @@ ul {
     padding: 5px;
 }
 
-/*
-
-|| LAYOUT ||
-
-*/
+/* || LAYOUT || */
 
 .alt-p {
     margin: 5px;
@@ -215,7 +205,6 @@ ul {
     text-shadow: 1px 1px 1px black;
     margin-right: 25%;
     margin-left: 25%;
-
 }
 
 .button-join {
@@ -224,7 +213,6 @@ ul {
     justify-content: center;
     margin-bottom: 10px;
 }
-
 
 .container {
     margin: auto;
@@ -245,6 +233,7 @@ ul {
     margin-top: 50px;
 }
 
+/*Error Message styles*/
 .error,
 .error-message {
     border: 2px solid maroon;
@@ -256,6 +245,8 @@ ul {
     text-align: center;
     margin: auto;
 }
+
+/*/error Message styles*/
 
 .form-div {
     display: flex;
@@ -290,8 +281,6 @@ ul {
     width: 90%;
 }
 
-
-
 li,
 .li-contact {
     font-size: 20px;
@@ -325,12 +314,7 @@ li,
     height: 200px;
 }
 
-
-/*
-
-|| CSS Selectors ||
-
-*/
+/* || CSS Selectors || */
 
 /* changes mouse cursor when in indicated fields */
 input[class="input-field"],
@@ -345,58 +329,31 @@ a[class="a-sign-up"] {
     margin-bottom: 20px;
 }
 
-#error-message {
-    
-}
 
-
-/*
-
-|| Media Queries ||
-
-*/
+/* || Media Queries || */
 
 @media screen and (max-width: 799px) {
 
     h1 {
         margin-top: 30px;
     }
-
-
-
 }
 
 @media (min-width: 800px){
 
-    .container {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-    }
+/* || Base Styles || */
 
-
-    .div-content {
-        margin-top: 0;
-        width: 60%;
-    }
-
+    
     footer {
         margin-bottom: 0;
         padding: 10px;
         text-align: center;
-        z-index: 100;
-    }
-
-    .form-div {
-        margin: 0 25%;
+        z-index: 100; /*keeps footer in front of everything*/
     }
 
     h1 {
         margin: auto;
         padding: 50px;
-        /* height: 40%; */
     }
 
 /* line styling with <h1>, i.e. ----TEXT---- */
@@ -423,6 +380,35 @@ a[class="a-sign-up"] {
         padding-top: 20px;
     }
 
+    legend {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    p {
+        letter-spacing: 2px;
+    }
+
+
+/* || Layout || */
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .div-content {
+        margin-top: 0;
+        width: 60%;
+    }
+
+    .form-div {
+        margin: 0 25%;
+    }
+
     .img_container {
         flex-grow: 2;
         padding: 0;
@@ -433,17 +419,8 @@ a[class="a-sign-up"] {
         width: 60%;
     }
 
-    legend {
-        text-align: left;
-        margin-left: 20px;
-    }
-
     .main-content {
         align-self: center;
-    }
-
-    p {
-        letter-spacing: 2px;
     }
 
     .p_content {
@@ -453,6 +430,7 @@ a[class="a-sign-up"] {
         padding: 0 30px;
     }
 }
+
 
 
 
