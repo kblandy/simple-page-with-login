@@ -16,7 +16,6 @@ primaryImg.addEventListener('mouseover', (event) =>{
     changeImage();
     primaryImg.addEventListener('mouseout', (event) =>{
         // will change the image after it is clicked
-        // setTimeout (changeImage, 2000);
         changeImageBack();
     });
     
