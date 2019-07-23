@@ -435,6 +435,7 @@ a[class="a-sign-up"] {
 
     legend {
         text-align: left;
+        margin-left: 20px;
     }
 
     .main-content {

@@ -1,3 +1,5 @@
+//VARIABLES
+
 const submitLogin = document.getElementById("submit-login");
 const usernameLogin = document.getElementById("name-login");
 const passwordLogin = document.getElementById("password-login");
@@ -5,7 +7,7 @@ const errorMessage1 = document.getElementById("error-message1");
 const errorMessage2 = document.getElementById("error-message2");
 
 
-//ensures that each field is filled out and alerts when not//
+//FUNCTIONS
 
 //hides error messages
 function hideErrorMessage1 () {
@@ -17,7 +19,7 @@ function hideErrorMessage2 () {
 }
 
 
-//shows error messages
+//shows error message divs
 function showErrorMessage1 () {
   errorMessage1.style.display = 'block';
 }
@@ -40,58 +42,44 @@ function removeError(inputField) {
     inputField.classList.remove("error");
 }  
 
-//validates forms and adds error and errorMessages
+//validates form and adds error and errorMessages
 function validateFormLogin() {
         if (!usernameLogin.value) {
           addError(usernameLogin);
           showErrorMessage1();
-        //   addError(); that highlights indicated field
-        } else if (!passwordLogin.value) {
+        } 
+        if (!passwordLogin.value) {
           addError(passwordLogin);
           showErrorMessage2();
-          //   addError(); that highlights indicated field
-        } else if (!usernameLogin.value && !passwordLogin.value) {
+        }
+        if (!usernameLogin.value && !passwordLogin.value) {
             addError(usernameLogin);
             showErrorMessage1();
             addError(passwordLogin);
             showErrorMessage2();
-        };
+        } 
 }
 
+//CLICK LISTENERS
 
-//click event that targets input
-// function hideMessageOnClick() {
-//   usernameLogin.addEventListener('click', (event)  =>{
-//     hideErrorMessage1();
-//     removeError(usernameLogin);
-//   });
-// }
-
-
-
-// removeError(usernameLogin);
-
-//need to target input fields
+//when username field is clicked, error is removed
 usernameLogin.addEventListener('click', (event) => {
   removeError(event.target);
   hideErrorMessage1();
 });
 
+//when password field is clicked, error is removed
 passwordLogin.addEventListener('click', (event) => {
   removeError(event.target);
   hideErrorMessage2();
 });
 
+//when submit is clicked, prevents default and 
+//performs form validation
 submitLogin.addEventListener('click', (event) =>{
     event.preventDefault(); /*prevents submit button from actually submitting*/
     validateFormLogin();
 });        
 
 
-//click event that targets input
-
-
-
-//To add text will need to make a <thing> that appears
-//make a little div slide up and then slide back down?
 

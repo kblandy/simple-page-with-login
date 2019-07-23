@@ -40,22 +40,39 @@
             <div class="form-div">
                 <form id="form-join" action="#" method="post">
             
-                    <h2>Sign Up</h2>
+                    <h2>Join the Community</h2>
                     
                     <fieldset>
+                        <legend><h3>Sign Up</h3></legend>
                     
                         <label for="name">Username:</label>
                         <input type="text" id="userName" name="user_name" class="input-field">
+                        <!-- error message div, hidden until activated -->
+                        <div class="error-message" id="errorMessageName">
+                            Fill out all fields!
+                        </div>
                 
                         <label for="date">Date of Birth:</label>
                         <input type="date" id="userBirthDate" name="user_date" class="input-field">
+                        <!-- error message div, hidden until activated -->
+                        <div class="error-message" id="errorMessageDob">
+                            Fill out all fields!
+                        </div>
                         
                         <label for="mail">Email:</label>
                         <input type="email" id="userEmail" name="user_email" class="input-field">
+                        <!-- error message div, hidden until activated -->
+                        <div class="error-message" id="errorMessageEmail">
+                            Fill out all fields!
+                        </div>
                         
                         <label for="password">Password:</label>
                         <input type="password" id="userPassword" name="user_password" class="input-field">
-                        
+                        <!-- error message div, hidden until activated -->
+                        <div class="error-message" id="errorMessagePassword">
+                            Fill out all fields!
+                        </div>
+
                     </fieldset>
                     
                     <div>
@@ -78,8 +95,6 @@
 
     <!--JS here-->
     <script src ="../scripts/script-join.js"></script>
-    <!-- jQuery -->
-    <script src="../scripts/jquery-3.4.1.min.js"></script>
 
 </body>
 </html>
